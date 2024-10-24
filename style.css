@@ -63,6 +63,7 @@ transition: all .5s ease; /*para q tome todas las caract del navlist A y si las 
     font-size: 35px;
     z-index: 101; /*Para q este por encima de la barra header q tenia 100*/
     cursor: pointer; /*Para q aparezca la manito al poner el mouse encima*/
+    display: none;
 }
 
 #menu-toggle{
@@ -270,7 +271,8 @@ section{
         margin: 7px 0
     }
 
-    #menu-toggle:checked + label.menu-icon-action + ul{
+    .navlist.open{
         right: 0;
     }
+    
 }

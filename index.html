@@ -28,13 +28,8 @@
         <!-- Logo -->
         <a href="#" class="logo">Maria Sol Bonhome</a>
 
-        <!--Si achico pantalla se rompe visualmente la UL, asi q sumamos logo MENU. Agrego id="menu-icon".
-        El problema es q no se puede clickear el logo, asi ponemos el input checkbox, el label (lo q se ve)
-        y se coloca el div del logo-menu dentro del label. ESTE ES EL TRUCO PARA Q EL BOTON SEA CLICKEABLE SIN USAR JAVASCRIPT-->
-        <input type="checkbox" name="checkbox" id="menu-toggle">
-        <label for="menu-toggle" class="menu-icon-action"> <!--Agrego class para en css hacer q no se vea nada-->
-            <div class='bx bx-menu' id="menu-icon"></div>
-        </label>
+        <div class='bx bx-menu' id="menu-icon"></div>
+        
       
 
         <ul class="navlist">
@@ -62,7 +57,7 @@
 
 
             <div class="hero-img"> <!--Pongo ese class para saber q este div se trata de la imagen de la seccion hero-->
-                <img src="assests/unnamed.jpgs" alt="sol foto">
+                <img src="assests/unnamed.jpg" alt="sol foto">
             </div>
         </section>
 
@@ -76,5 +71,10 @@
         <a href="#"><i class="ri-arrow-down-s-line"></i></a>
     </div>
     
+    <!--Script de scrollReveal, para poder usarlo en el script.js-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
